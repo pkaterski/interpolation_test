@@ -56,7 +56,7 @@ def predict_concentration(interpolator, temperature, density):
     return float(interpolator([temperature, density])[0])
 
 if __name__ == "__main__":
-    interpolator = create_hcl_predictor("hcl.csv")
+    interpolator = create_hcl_predictor("data/hcl.csv")
 
     while True:
         print("Temperature(°C) > ", end="")
